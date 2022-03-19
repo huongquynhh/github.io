@@ -4,27 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nhan_vien
+namespace Sinh_Vien
 {
     internal class Program
     {
         static void Main(string[] args)
-            
-        {   
-            Console.OutputEncoding = Encoding.UTF8;
+        {    Console.OutputEncoding = Encoding.UTF8; 
+            sinhvien sv1=new sinhvien();
+            sinhvien sv2=new sinhvien();
+            Console.WriteLine("Thông tin sinh viên thứ nhất là:");
+            sv1.nhap();
+            sv1.xuat();
+            Console.WriteLine("Thông tin sinh viên thứ hai là:");
+            sv2.nhap();
+            sv2.xuat();
 
-            nhanvien nv1 =new nhanvien();
-            nhanvien nv2=new nhanvien();
-          
-            Console.WriteLine("Nhập thông tin nhân viên thứ nhất:");
-            nv1.nhap();
-            nv1.xuat();
 
-             Console.WriteLine(" Nhập thông tin nhân viên thứ hai");
-            nv2.nhap();
-            nv2.xuat();
-            Console.ReadLine();
-          
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace form_ptrinhbachai
+﻿namespace form_thaydoimaunen
 {
     partial class Form1
     {
@@ -28,171 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.nudNhapA = new System.Windows.Forms.NumericUpDown();
-            this.nudNhapB = new System.Windows.Forms.NumericUpDown();
-            this.nudNhapC = new System.Windows.Forms.NumericUpDown();
-            this.txtKetqua = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lbx2 = new System.Windows.Forms.Label();
-            this.lbx1 = new System.Windows.Forms.Label();
-            this.txtX2 = new System.Windows.Forms.TextBox();
-            this.txtX1 = new System.Windows.Forms.TextBox();
-            this.btnGiaiPTBH = new System.Windows.Forms.Button();
-            this.btnThoat = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.nudNhapA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudNhapB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudNhapC)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.hsbRed = new System.Windows.Forms.HScrollBar();
+            this.hsbGreen = new System.Windows.Forms.HScrollBar();
+            this.hsbBlue = new System.Windows.Forms.HScrollBar();
+            this.lblRed = new System.Windows.Forms.Label();
+            this.lblGreen = new System.Windows.Forms.Label();
+            this.lblBlue = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // hsbRed
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(99, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(13, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "a";
+            this.hsbRed.Location = new System.Drawing.Point(230, 249);
+            this.hsbRed.Maximum = 255;
+            this.hsbRed.Name = "hsbRed";
+            this.hsbRed.Size = new System.Drawing.Size(216, 31);
+            this.hsbRed.TabIndex = 0;
+            this.hsbRed.ValueChanged += new System.EventHandler(this.hsbRed_ValueChanged);
             // 
-            // label2
+            // hsbGreen
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(577, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(13, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "c";
+            this.hsbGreen.Location = new System.Drawing.Point(230, 296);
+            this.hsbGreen.Maximum = 255;
+            this.hsbGreen.Name = "hsbGreen";
+            this.hsbGreen.Size = new System.Drawing.Size(216, 26);
+            this.hsbGreen.TabIndex = 1;
+            this.hsbGreen.ValueChanged += new System.EventHandler(this.hsbGreen_ValueChanged);
             // 
-            // label3
+            // hsbBlue
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(335, 43);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(13, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "b";
+            this.hsbBlue.Location = new System.Drawing.Point(230, 343);
+            this.hsbBlue.Maximum = 255;
+            this.hsbBlue.Name = "hsbBlue";
+            this.hsbBlue.Size = new System.Drawing.Size(216, 27);
+            this.hsbBlue.TabIndex = 2;
+            this.hsbBlue.ValueChanged += new System.EventHandler(this.hsbBlue_ValueChanged);
             // 
-            // nudNhapA
+            // lblRed
             // 
-            this.nudNhapA.Location = new System.Drawing.Point(137, 42);
-            this.nudNhapA.Name = "nudNhapA";
-            this.nudNhapA.Size = new System.Drawing.Size(120, 20);
-            this.nudNhapA.TabIndex = 3;
-            this.nudNhapA.ValueChanged += new System.EventHandler(this.nudNhapA_ValueChanged);
+            this.lblRed.AutoSize = true;
+            this.lblRed.Location = new System.Drawing.Point(137, 266);
+            this.lblRed.Name = "lblRed";
+            this.lblRed.Size = new System.Drawing.Size(27, 13);
+            this.lblRed.TabIndex = 3;
+            this.lblRed.Text = "Red";
             // 
-            // nudNhapB
+            // lblGreen
             // 
-            this.nudNhapB.Location = new System.Drawing.Point(390, 41);
-            this.nudNhapB.Name = "nudNhapB";
-            this.nudNhapB.Size = new System.Drawing.Size(120, 20);
-            this.nudNhapB.TabIndex = 4;
-            this.nudNhapB.ValueChanged += new System.EventHandler(this.nudNhapB_ValueChanged);
+            this.lblGreen.AutoSize = true;
+            this.lblGreen.Location = new System.Drawing.Point(140, 308);
+            this.lblGreen.Name = "lblGreen";
+            this.lblGreen.Size = new System.Drawing.Size(36, 13);
+            this.lblGreen.TabIndex = 4;
+            this.lblGreen.Text = "Green";
             // 
-            // nudNhapC
+            // lblBlue
             // 
-            this.nudNhapC.Location = new System.Drawing.Point(619, 42);
-            this.nudNhapC.Name = "nudNhapC";
-            this.nudNhapC.Size = new System.Drawing.Size(120, 20);
-            this.nudNhapC.TabIndex = 5;
-            this.nudNhapC.ValueChanged += new System.EventHandler(this.nudNhapC_ValueChanged);
-            // 
-            // txtKetqua
-            // 
-            this.txtKetqua.Location = new System.Drawing.Point(102, 178);
-            this.txtKetqua.Multiline = true;
-            this.txtKetqua.Name = "txtKetqua";
-            this.txtKetqua.Size = new System.Drawing.Size(197, 141);
-            this.txtKetqua.TabIndex = 6;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.lbx2);
-            this.groupBox1.Controls.Add(this.lbx1);
-            this.groupBox1.Controls.Add(this.txtX2);
-            this.groupBox1.Controls.Add(this.txtX1);
-            this.groupBox1.Location = new System.Drawing.Point(501, 178);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(197, 152);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Nghiệm";
-            // 
-            // lbx2
-            // 
-            this.lbx2.AutoSize = true;
-            this.lbx2.Location = new System.Drawing.Point(6, 101);
-            this.lbx2.Name = "lbx2";
-            this.lbx2.Size = new System.Drawing.Size(18, 13);
-            this.lbx2.TabIndex = 3;
-            this.lbx2.Text = "x2";
-            // 
-            // lbx1
-            // 
-            this.lbx1.AutoSize = true;
-            this.lbx1.Location = new System.Drawing.Point(7, 38);
-            this.lbx1.Name = "lbx1";
-            this.lbx1.Size = new System.Drawing.Size(18, 13);
-            this.lbx1.TabIndex = 2;
-            this.lbx1.Text = "x1";
-            // 
-            // txtX2
-            // 
-            this.txtX2.Location = new System.Drawing.Point(60, 98);
-            this.txtX2.Name = "txtX2";
-            this.txtX2.Size = new System.Drawing.Size(100, 20);
-            this.txtX2.TabIndex = 1;
-            // 
-            // txtX1
-            // 
-            this.txtX1.Location = new System.Drawing.Point(60, 38);
-            this.txtX1.Name = "txtX1";
-            this.txtX1.Size = new System.Drawing.Size(100, 20);
-            this.txtX1.TabIndex = 0;
-            // 
-            // btnGiaiPTBH
-            // 
-            this.btnGiaiPTBH.Location = new System.Drawing.Point(218, 389);
-            this.btnGiaiPTBH.Name = "btnGiaiPTBH";
-            this.btnGiaiPTBH.Size = new System.Drawing.Size(75, 23);
-            this.btnGiaiPTBH.TabIndex = 8;
-            this.btnGiaiPTBH.Text = "Giải PTBH";
-            this.btnGiaiPTBH.UseVisualStyleBackColor = true;
-            this.btnGiaiPTBH.Click += new System.EventHandler(this.btnGiaiPTBH_Click);
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Location = new System.Drawing.Point(458, 388);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(75, 23);
-            this.btnThoat.TabIndex = 9;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            this.lblBlue.AutoSize = true;
+            this.lblBlue.Location = new System.Drawing.Point(140, 356);
+            this.lblBlue.Name = "lblBlue";
+            this.lblBlue.Size = new System.Drawing.Size(28, 13);
+            this.lblBlue.TabIndex = 5;
+            this.lblBlue.Text = "Blue";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.btnGiaiPTBH);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.txtKetqua);
-            this.Controls.Add(this.nudNhapC);
-            this.Controls.Add(this.nudNhapB);
-            this.Controls.Add(this.nudNhapA);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblBlue);
+            this.Controls.Add(this.lblGreen);
+            this.Controls.Add(this.lblRed);
+            this.Controls.Add(this.hsbBlue);
+            this.Controls.Add(this.hsbGreen);
+            this.Controls.Add(this.hsbRed);
             this.Name = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.nudNhapA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudNhapB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudNhapC)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Text = "Màu nền form";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,20 +110,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown nudNhapA;
-        private System.Windows.Forms.NumericUpDown nudNhapB;
-        private System.Windows.Forms.NumericUpDown nudNhapC;
-        private System.Windows.Forms.TextBox txtKetqua;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label lbx2;
-        private System.Windows.Forms.Label lbx1;
-        private System.Windows.Forms.TextBox txtX2;
-        private System.Windows.Forms.TextBox txtX1;
-        private System.Windows.Forms.Button btnGiaiPTBH;
-        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.HScrollBar hsbRed;
+        private System.Windows.Forms.HScrollBar hsbGreen;
+        private System.Windows.Forms.HScrollBar hsbBlue;
+        private System.Windows.Forms.Label lblRed;
+        private System.Windows.Forms.Label lblGreen;
+        private System.Windows.Forms.Label lblBlue;
     }
 }
 

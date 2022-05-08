@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace form_thaydoimaunen
+namespace form_font
 {
     public partial class Form1 : Form
     {
@@ -17,25 +17,113 @@ namespace form_thaydoimaunen
             InitializeComponent();
         }
 
-        private void hsbRed_ValueChanged(object sender, EventArgs e)
+        private void btnThoat_Click(object sender, EventArgs e)
         {
-            this.BackColor = Color.FromArgb(hsbRed.Value, hsbGreen.Value, hsbBlue.Value);
-            lblRed.Text = hsbRed.Value.ToString();
+            Application.Exit();
+        }
+
+        private void rdoXanh_CheckedChanged(object sender, EventArgs e)
+        {
+            if(rdoXanh.Checked)
+            {
+                txtnhapten.ForeColor= Color.Blue;
+            }    
 
         }
 
-        private void hsbGreen_ValueChanged(object sender, EventArgs e)
+        private void rdoDo_CheckedChanged(object sender, EventArgs e)
         {
-            this.BackColor = Color.FromArgb(hsbRed.Value, hsbGreen.Value, hsbBlue.Value);
-            lblGreen.Text = hsbGreen.Value.ToString();
+            if (rdoDo.Checked)
+            {
+                txtnhapten.ForeColor = Color.Red;
+            }
+
 
         }
 
-        private void hsbBlue_ValueChanged(object sender, EventArgs e)
+        private void rdoVang_CheckedChanged(object sender, EventArgs e)
         {
-            this.BackColor = Color.FromArgb(hsbRed.Value, hsbGreen.Value, hsbBlue.Value);
-            lblBlue.Text = hsbBlue.Value.ToString();
+            if (rdoVang.Checked)
+            {
+                txtnhapten.ForeColor = Color.Yellow;
+            }
+        }
 
+        private void rdoTim_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoTim.Checked)
+            {
+                txtnhapten.ForeColor = Color.Purple;
+            }
+        }
+
+        private void ckbBold_CheckedChanged(object sender, EventArgs e)
+        {
+            if( ckbBold.Checked)
+            {
+                txtnhapten.Font = new Font(txtnhapten.Font, txtnhapten.Font.Style | FontStyle.Bold);
+
+            }
+        }
+
+        private void ckbItalic_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ckbItalic.Checked)
+            {
+                txtnhapten.Font = new Font(txtnhapten.Font, txtnhapten.Font.Style | FontStyle.Italic);
+
+            }
+        }
+
+        private void ckbStrikeout_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ckbStrikeout.Checked)
+            {
+                txtnhapten.Font = new Font(txtnhapten.Font, txtnhapten.Font.Style | FontStyle.Strikeout);
+
+            }
+        }
+
+        private void ckbUnderLine_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ckbUnderLine.Checked)
+            {
+                txtnhapten.Font = new Font(txtnhapten.Font, txtnhapten.Font.Style | FontStyle.Underline);
+
+            }
+        }
+
+        private void rdoVnTime_CheckedChanged(object sender, EventArgs e)
+        {
+            if(rdoVnTime.Checked)
+            {
+                txtnhapten.Font = new Font("VnTime", 10);
+            }    
+        }
+
+        private void rdoVnUniverse_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoVnUniverse.Checked)
+            {
+                txtnhapten.Font = new Font("VnUniverse", 10);
+            }
+        }
+
+        private void rdoVnVogue_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoVnVogue.Checked)
+            {
+                txtnhapten.Font = new Font("VnVogue", 10);
+            }
+        }
+
+        private void rdoTahoma_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoTahoma.Checked)
+            {
+                txtnhapten.Font = new Font("Tahoma", 10);
+            }
         }
     }
+
 }
